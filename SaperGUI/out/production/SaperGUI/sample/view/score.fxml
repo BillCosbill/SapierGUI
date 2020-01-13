@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="700.0" maxWidth="800.0" minHeight="700.0" minWidth="800.0" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #4B4237;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ScoreController">
+    <children>
+        <Button fx:id="back" layoutX="500.0" layoutY="500.0" mnemonicParsing="false" onAction="#menu" prefWidth="100.0" style="-fx-background-color: #EDE7D9;" text="Nie dodawaj" textFill="#a49815">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="add" layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#add" prefWidth="100.0" style="-fx-background-color: #EDE7D9;" text="Dodaj" textFill="#a49815">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fill="#a49815" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TWÓJ CZAS:" textAlignment="CENTER" wrappingWidth="800.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fx:id="time" fill="#a49815" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." textAlignment="CENTER" wrappingWidth="800.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#a49815" layoutX="-1.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj swój nick:" textAlignment="CENTER" wrappingWidth="800.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <TextField fx:id="name" layoutX="326.0" layoutY="261.0" style="-fx-background-color: #EDE7D9;" />
+    </children>
+</Pane>
